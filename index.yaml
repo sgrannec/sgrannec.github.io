@@ -27,7 +27,7 @@ entries:
     sources:
     - http://open5gs.org
     urls:
-    - open5gs-upf-2.2.7.tgz
+    - https://sgrannec.github.io/open5gs-upf-2.2.7.tgz
     version: 2.2.7
 generated: "2024-10-15T19:11:06.549647206Z"
 
