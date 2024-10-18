@@ -23,7 +23,7 @@ entries:
     maintainers:
     - email: stephane.grannec@orange.com
       name: sgrannec
-    name: open5gs-upf-2.2.7a
+    name: open5gs-upf-2.2.7
     urls:
     - https://sgrannec.github.io/open5gs-upf-2.2.7a/open5gs-upf-2.2.7.tgz
     version: 2.2.7
