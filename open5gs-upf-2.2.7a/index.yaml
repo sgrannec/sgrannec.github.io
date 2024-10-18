@@ -26,5 +26,5 @@ entries:
     name: open5gs-upf-2.2.7a
     urls:
     - https://sgrannec.github.io/open5gs-upf-2.2.7a/open5gs-upf-2.2.7a.tgz
-    version: 2.2.7
+    version: 2.2.7a
 generated: "2024-10-17T19:45:36.359935557Z"
