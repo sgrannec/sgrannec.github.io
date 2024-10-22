@@ -1,0 +1,32 @@
+apiVersion: v1
+entries:
+  open5gs-upf:
+  - annotations:
+      artifacthub.io/category: networking
+    apiVersion: v2
+    appVersion: 2.7.2a
+    created: "2024-10-22T19:41:44.345958156Z"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: 'Helm chart to deploy Open5gs UPF service on Kubernetes. '
+    digest: a8ab5a386a086cb47887515014f34d6a56d00523c6a8baf8c21ecca5fff71600
+    home: https://github.com/sgrannec/5g-charts
+    icon: https://open5gs.org/assets/img/open5gs-logo.png
+    keywords:
+    - network
+    - ngc
+    - gradiant
+    maintainers:
+    - email: stephane.grannec@orange.com
+      name: sgrannec
+    name: open5gs-upf
+    sources:
+    - http://open5gs.org
+    urls:
+    - https://sgrannec.github.io/open5gs-upf-2.2.7a/open5gs-upf-2.2.7.tgz
+    version: 2.2.7
+generated: "2024-10-22T19:41:44.342917317Z"
