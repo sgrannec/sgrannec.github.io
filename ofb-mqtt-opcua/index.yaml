@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  ofb-mqtt-opcua:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2024-10-24T20:54:13.492569562Z"
+    description: A Helm chart to deploy an instance of a MQTT OPCUA gateway
+    digest: 77d4a752b2bbeafbf876892afd6936f2fbaad75a2f5fa7b40984e7a1a79ca4be
+    name: ofb-mqtt-opcua
+    type: application
+    urls:
+    - https://sgrannec.github.io/ofb-mqtt-opcua/ofb-mqtt-opcua-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-10-24T20:54:13.491890355Z"
