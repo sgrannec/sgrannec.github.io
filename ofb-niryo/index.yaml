@@ -3,12 +3,12 @@ entries:
   ofb-niryo:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2024-10-24T20:30:44.570021737Z"
+    created: "2024-10-24T20:41:42.110662898Z"
     description: A Helm chart to deploy a Niryo instance
     digest: bd5f6592c18fa012dfc7b6a7e2f6dee4cc4019bd424e066fbb20f624a1088cca
     name: ofb-niryo
     type: application
     urls:
-    - https://sgrannec.github.io/ofb-niryo-0.1.0/ofb-niryo-0.1.0.tgz
+    - https://sgrannec.github.io/ofb-niryo/ofb-niryo-0.1.0.tgz
     version: 0.1.0
-generated: "2024-10-24T20:30:44.569657143Z"
+generated: "2024-10-24T20:41:42.110113601Z"
