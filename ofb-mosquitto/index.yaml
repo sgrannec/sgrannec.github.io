@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  ofb-mosquitto:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2024-10-24T20:49:06.022878302Z"
+    description: A Helm chart to deploy a Mosquitto MQTT broker
+    digest: 376c795c3881837493bd2b9cb53f808904dad861357797ece4e260b67717adfe
+    name: ofb-mosquitto
+    type: application
+    urls:
+    - https://sgrannec.github.io/ofb-mosquitto/ofb-mosquitto-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-10-24T20:49:06.022382939Z"
