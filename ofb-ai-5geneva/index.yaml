@@ -1,0 +1,15 @@
+apiVersion: v1
+entries:
+  ofb-ai-5geneva:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2024-10-24T20:35:50.199687534Z"
+    description: A Helm chart to deploy an instance of the AI that computes distances
+      to red gears
+    digest: 2ff01f5f15f4610f1a4ff9069aff8fa6b998687a1442559803ee76d5a1474265
+    name: ofb-ai-5geneva
+    type: application
+    urls:
+    - https://sgrannec.github.io/ofb-ai-5geneva-0.1.0/ofb-ai-5geneva-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-10-24T20:35:50.199098107Z"
