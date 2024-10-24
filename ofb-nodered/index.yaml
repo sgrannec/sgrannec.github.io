@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  ofb-nodered:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2024-10-24T20:56:12.237451678Z"
+    description: A Helm chart to deploy a NodeRed instance
+    digest: e843001c93bf3ae462dad0b484b83ab1e4dc2c64c5b24579a469799b92648c25
+    name: ofb-nodered
+    type: application
+    urls:
+    - https://sgrannec.github.io/ofb-nodered/ofb-nodered-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-10-24T20:56:12.234215008Z"
