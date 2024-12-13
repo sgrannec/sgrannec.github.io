@@ -5,7 +5,7 @@ entries:
       artifacthub.io/category: networking
     apiVersion: v2
     appVersion: 2.7.2
-    created: "2024-12-13T21:21:07.833789565Z"
+    created: "2024-12-13T23:06:16.698001237Z"
     dependencies:
     - name: common
       repository: https://charts.bitnami.com/bitnami
@@ -102,7 +102,7 @@ entries:
       repository: file://../open5gs-webui
       version: ~2.2.5
     description: 'Helm chart to deploy Open5gs services on Kubernetes. '
-    digest: 439a3a7969309ebe866d9b3e3f5b4390734170304093fecc4c8b8c868aa6bb4b
+    digest: 7bd881b3383b20c68f2d6fbbdb3bd2b399fdf5fc24131c3d1687cbf5f54061dc
     home: https://github.com/gradiant/5g-charts
     icon: https://open5gs.org/assets/img/open5gs-logo.png
     keywords:
@@ -119,4 +119,4 @@ entries:
     urls:
     - https://sgrannec.github.io/open5gs/open5gs-2.2.6.tgz
     version: 2.2.6
-generated: "2024-12-13T21:21:07.783775505Z"
+generated: "2024-12-13T23:06:16.632014466Z"
