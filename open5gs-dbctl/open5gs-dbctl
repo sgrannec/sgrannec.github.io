@@ -854,7 +854,7 @@ if [ "$1" = "ambr_speed" ]; then
 fi
 
 if [ "$1" = "add_ue_with_1_slice" ]; then
-    if [ "$#" -eq 11 ]; then
+    if [ "$#" -eq 10 ]; then
         IMSI=$2
         MSISSDN=$3
         KI=$4
@@ -934,12 +934,12 @@ if [ "$1" = "add_ue_with_1_slice" ]; then
         exit $?
     fi
 
-    echo "open5gs-dbctl: incorrect number of args, format is \"open5gs-dbctl add_ue_with_1_slice imsi key opc apn sst sd\""
+    echo "open5gs-dbctl: incorrect number of args, format is \"open5gs-dbctl add_ue_with_1_slice imsi key opc apn sst sd qi arp\""
     exit 1
 fi
 
 if [ "$1" = "add_ue_with_2_slice" ]; then
-    if [ "$#" -eq 15 ]; then
+    if [ "$#" -eq 14 ]; then
         IMSI=$2
         MSISSDN=$3
         KI=$4
@@ -1058,7 +1058,7 @@ if [ "$1" = "add_ue_with_2_slice" ]; then
         exit $?
     fi
 
-    echo "open5gs-dbctl: incorrect number of args, format is \"open5gs-dbctl add_ue_with_1_slice imsi key opc apn sst sd\""
+    echo "open5gs-dbctl: incorrect number of args, format is \"open5gs-dbctl add_ue_with_1_slice imsi key opc apn sst sd qi arp apn2 sst2 sd2 qi2 arp2\""
     exit 1
 fi
 
