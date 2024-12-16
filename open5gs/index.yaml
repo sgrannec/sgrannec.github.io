@@ -4,7 +4,7 @@ entries:
   - annotations:
       artifacthub.io/category: networking
     apiVersion: v2
-    appVersion: 2.7.2
+    appVersion: 2.7.2a
     created: "2024-12-13T23:06:16.698001237Z"
     dependencies:
     - name: common
@@ -103,7 +103,7 @@ entries:
       version: ~2.2.5
     description: 'Helm chart to deploy Open5gs services on Kubernetes. '
     digest: 7bd881b3383b20c68f2d6fbbdb3bd2b399fdf5fc24131c3d1687cbf5f54061dc
-    home: https://github.com/gradiant/5g-charts
+    home: https://github.com/sgrannec/5g-charts
     icon: https://open5gs.org/assets/img/open5gs-logo.png
     keywords:
     - network
@@ -111,8 +111,8 @@ entries:
     - ngc
     - gradiant
     maintainers:
-    - email: cgiraldo@gradiant.org
-      name: cgiraldo
+    - email: stephane.grannec@orange.com
+      name: sgrannec
     name: open5gs
     sources:
     - http://open5gs.org
