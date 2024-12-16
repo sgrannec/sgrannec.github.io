@@ -854,7 +854,7 @@ if [ "$1" = "ambr_speed" ]; then
 fi
 
 if [ "$1" = "add_ue_with_1_slice" ]; then
-    if [ "$#" -eq 8 ]; then
+    if [ "$#" -eq 10 ]; then
         IMSI=$2
         MSISSDN=$3
         KI=$4
@@ -939,7 +939,7 @@ if [ "$1" = "add_ue_with_1_slice" ]; then
 fi
 
 if [ "$1" = "add_ue_with_2_slice" ]; then
-    if [ "$#" -eq 13 ]; then
+    if [ "$#" -eq 14 ]; then
         IMSI=$2
         MSISSDN=$3
         KI=$4
