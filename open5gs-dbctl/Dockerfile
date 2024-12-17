@@ -11,7 +11,7 @@ RUN apt-get update && \
     apt-get install -y wget && \
     apt-get clean
 
-RUN wget -O /usr/local/bin/open5gs-dbctl ttps://sgrannec.github.io/open5gs-dbctl/open5gs-dbctl && \
+RUN wget -O /usr/local/bin/open5gs-dbctl https://sgrannec.github.io/open5gs-dbctl/open5gs-dbctl && \
     chmod +x /usr/local/bin/open5gs-dbctl
 
 RUN groupadd -r $GROUP && \

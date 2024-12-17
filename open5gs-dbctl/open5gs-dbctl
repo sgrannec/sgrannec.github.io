@@ -1062,5 +1062,5 @@ if [ "$1" = "add_ue_with_2_slice" ]; then
     exit 1
 fi
 
-display_help
+#display_help
 

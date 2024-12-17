@@ -1,6 +1,7 @@
 #/bin/bash
 
-REMOTE_FILE="https://github.com/open5gs/open5gs/raw/main/misc/db/open5gs-dbctl"
+#REMOTE_FILE="https://github.com/open5gs/open5gs/raw/main/misc/db/open5gs-dbctl"
+REMOTE_FILE="https://sgrannec.github.io/open5gs/open5gs-dbctl"
 
 
 CURRENT_TAG=`wget -qO- https://sgrannec.github.io/open5gs/open5gs-dbctl |grep version= | cut -d '=' -f2`
