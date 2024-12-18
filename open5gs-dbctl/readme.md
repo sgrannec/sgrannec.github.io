@@ -9,7 +9,7 @@ git clone https://github.com/sgrannec/sgrannec.github.io.git
 ```
 cd open5gs-dbctl
 ```
-`
+
 # Build open5gs-dbctl
 
 ```
