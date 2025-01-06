@@ -870,7 +870,7 @@ if [ "$1" = "add_ue_with_1_slice" ]; then
                 \"_id\": new ObjectId(),
                 \"schema_version\": NumberInt(1),
                 \"imsi\": \"$IMSI\",
-                \"msisdn\": \"$MSISSDN\",
+                \"msisdn\": [ \"$MSISSDN\" ],
                 \"imeisv\": [],
                 \"mme_host\": [],
                 \"mm_realm\": [],
@@ -935,6 +935,210 @@ if [ "$1" = "add_ue_with_1_slice" ]; then
     fi
 
     echo "open5gs-dbctl: incorrect number of args, format is \"open5gs-dbctl add_ue_with_1_slice imsi key opc apn sst sd qi arp\""
+    exit 1
+fi
+
+if [ "$1" = "add_ue_with_2_slices" ]; then
+    if [ "$#" -eq 14 ]; then
+        IMSI=$2
+        MSISSDN=$3
+        KI=$4
+        OPC=$5
+        APN=$6
+        SST=$7
+        SD=$8
+        QI=$9
+        ARP=${10}
+        SSTA=${11}
+        SDA=${12}
+        QIA=${13}
+        ARPA=${14}
+
+        echo $ARPA
+        mongosh --eval "db.subscribers.insertOne(
+            {
+                \"_id\": new ObjectId(),
+                \"schema_version\": NumberInt(1),
+                \"imsi\": \"$IMSI\",
+                \"msisdn\": [ \"$MSISSDN\" ],
+                \"imeisv\": [],
+                \"mme_host\": [],
+                \"mm_realm\": [],
+                \"purge_flag\": [],
+                \"slice\":[
+                {
+                    \"sst\": NumberInt($SST),
+                    \"sd\": \"$SD\",
+                    \"default_indicator\": true,
+                    \"session\": [
+                    {
+                        \"name\" : \"$APN\",
+                        \"type\" : NumberInt(1),
+                        \"qos\" :
+                        { \"index\": NumberInt($QI),
+                            \"arp\":
+                            {
+                                \"priority_level\" : NumberInt($ARP),
+                                \"pre_emption_capability\": NumberInt(1),
+                                \"pre_emption_vulnerability\": NumberInt(2)
+                            }
+                        },
+                        \"ambr\":
+                        {
+                            \"downlink\":
+                            {
+                                \"value\": NumberInt(1000000000),
+                                \"unit\": NumberInt(0)
+                            },
+                            \"uplink\":
+                            {
+                                \"value\": NumberInt(1000000000),
+                                \"unit\": NumberInt(0)
+                            }
+                        },
+                        \"pcc_rule\": [],
+                        \"_id\": new ObjectId(),
+                    }],
+                    \"_id\": new ObjectId(),
+                },
+                {
+                    \"sst\": NumberInt($SSTA),
+                    \"sd\": \"$SDA\",
+                    \"default_indicator\": true,
+                    \"session\": [
+                    {
+                        \"name\" : \"$APN\",
+                        \"type\" : NumberInt(1),
+                        \"qos\" :
+                        { \"index\": NumberInt($QIA),
+                            \"arp\":
+                            {
+                                \"priority_level\" : NumberInt($ARPA),
+                                \"pre_emption_capability\": NumberInt(1),
+                                \"pre_emption_vulnerability\": NumberInt(2)
+                            }
+                        },
+                        \"ambr\":
+                        {
+                            \"downlink\":
+                            {
+                                \"value\": NumberInt(1000000000),
+                                \"unit\": NumberInt(0)
+                            },
+                            \"uplink\":
+                            {
+                                \"value\": NumberInt(1000000000),
+                                \"unit\": NumberInt(0)
+                            }
+                        },
+                        \"pcc_rule\": [],
+                        \"_id\": new ObjectId(),
+                    }],
+                    \"_id\": new ObjectId(),
+                }],
+                \"security\":
+                {
+                    \"k\" : \"$KI\",
+                    \"op\" : null,
+                    \"opc\" : \"$OPC\",
+                    \"amf\" : \"8000\",
+                },
+                \"ambr\" :
+                {
+                    \"downlink\" : { \"value\": NumberInt(1000000000), \"unit\": NumberInt(0)},
+                    \"uplink\" : { \"value\": NumberInt(1000000000), \"unit\": NumberInt(0)}
+                },
+                \"access_restriction_data\": 32,
+                \"network_access_mode\": 0,
+                \"subscriber_status\": 0,
+                \"operator_determined_barring\": 0,
+                \"subscribed_rau_tau_timer\": 12,
+                \"__v\": 0
+            }
+            );" $DB_URI
+        exit $?
+    fi
+
+    echo "open5gs-dbctl: incorrect number of args, format is \"open5gs-dbctl add_ue_with_1_slice imsi key opc apn sst sd qi arp apn2 sst2 sd2 
+qi2 arp2\""
+    exit 1
+fi
+
+if [ "$1" = "add_profiles_with_1_slice" ]; then
+    if [ "$#" -eq 10 ]; then
+        MSISSDN=$2
+        PROFILENAME=$3
+        KI=$4
+        OPC=$5
+        SST=$6
+        QI=$7
+        ARP=$8
+        APN=$9
+        SD=${10}
+
+        mongosh --eval "db.profiles.insertOne(
+            {
+                \"_id\": new ObjectId(),
+                \"ambr\" :
+                {
+                    \"downlink\" : { \"value\": NumberInt(1), \"unit\": NumberInt(3)},
+                    \"uplink\" : { \"value\": NumberInt(1), \"unit\": NumberInt(3)}
+                },
+                \"schema_version\": NumberInt(1),
+                \"msisdn\": [ \"$MSISSDN\" ],
+                \"imeisv\": [],
+                \"title\": \"$PROFILENAME\",
+                \"security\":
+                {
+                    \"k\" : \"$KI\",
+                    \"amf\" : \"8000\",
+                    \"op\" : null,
+                    \"opc\" : \"$OPC\",
+                },
+                \"slice\":[
+                {
+                    \"_id\": new ObjectId(),
+                    \"sst\": $SST,
+                    \"default_indicator\": true,
+                    \"session\": [
+                    {
+                        \"qos\" :
+                        { \"index\": NumberInt($QI),
+                            \"arp\":
+                            {
+                                \"priority_level\" : NumberInt($ARP),
+                                \"pre_emption_capability\": NumberInt(1),
+                                \"pre_emption_vulnerability\": NumberInt(1)
+                            }
+                        },
+                        \"ambr\":
+                        {
+                            \"downlink\":
+                            {
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
+                            },
+                            \"uplink\":
+                            {
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
+                            }
+                        },
+                        \"_id\": new ObjectId(),
+                        \"name\" : \"$APN\",
+                        \"type\" : NumberInt(1),
+                        \"pcc_rule\": [],
+                    }],
+                    \"sd\": \"$SD\"
+                }],
+                \"__v\": 0
+            }
+            );" $DB_URI
+        exit $?
+    fi
+
+    echo "open5gs-dbctl: incorrect number of args, format is \"open5gs-dbctl add_profiles_with_1_slice msisdn profilename ki opc sst qi arp ap
+n sd\""
     exit 1
 fi
 
