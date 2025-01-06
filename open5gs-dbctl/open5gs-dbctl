@@ -863,7 +863,7 @@ if [ "$1" = "add_ue_with_1_slice" ]; then
         SST=$7
         SD=$8
         QI=$9
-        ARP=$10
+        ARP=${10}
 
         mongosh --eval "db.subscribers.insertOne(
             {
@@ -938,127 +938,155 @@ if [ "$1" = "add_ue_with_1_slice" ]; then
     exit 1
 fi
 
-if [ "$1" = "add_ue_with_2_slice" ]; then
+if [ "$1" = "add_profiles_with_2_slices" ]; then
     if [ "$#" -eq 14 ]; then
-        IMSI=$2
-        MSISSDN=$3
+        MSISSDN=$2
+        PROFILENAME=$3
         KI=$4
         OPC=$5
-        APN=$6
-        SST=$7
-        SD=$8
-        QI=$9
-        ARP=$10
-        SST1=$11
-        SD1=$12
-        QI1=$13
-        ARP1=$14
+        SST=$6
+        QI=$7
+        ARP=$8
+        SD=$9
+        APN=${10}
+        SSTA=${11}
+        QIA=${12}
+        ARPA=${13}
+        SDA=${14}
 
-        mongosh --eval "db.subscribers.insertOne(
+        mongosh --eval "db.profiles.insertOne(
             {
                 \"_id\": new ObjectId(),
+                \"ambr\" :
+                {
+                    \"downlink\" : { \"value\": NumberInt(1), \"unit\": NumberInt(3)},
+                    \"uplink\" : { \"value\": NumberInt(1), \"unit\": NumberInt(3)}
+                },
                 \"schema_version\": NumberInt(1),
-                \"imsi\": \"$IMSI\",
-                \"msisdn\": \"$MSISSDN\",
+                \"msisdn\": [ \"$MSISSDN\" ],
                 \"imeisv\": [],
-                \"mme_host\": [],
-                \"mm_realm\": [],
-                \"purge_flag\": [],
+                \"title\": \"$PROFILENAME\",
+                \"security\":
+                {
+                    \"k\" : \"$KI\",
+                    \"amf\" : \"8000\",
+                    \"op\" : null,
+                    \"opc\" : \"$OPC\",
+                },
                 \"slice\":[
                 {
-                    \"sst\": NumberInt($SST),
-                    \"sd\": \"$SD\",
+                    \"_id\": new ObjectId(),
+                    \"sst\": $SST,
                     \"default_indicator\": true,
                     \"session\": [
                     {
-                        \"name\" : \"$APN\",
-                        \"type\" : NumberInt(1),
                         \"qos\" :
                         { \"index\": NumberInt($QI),
                             \"arp\":
                             {
                                 \"priority_level\" : NumberInt($ARP),
                                 \"pre_emption_capability\": NumberInt(1),
-                                \"pre_emption_vulnerability\": NumberInt(2)
+                                \"pre_emption_vulnerability\": NumberInt(1)
                             }
                         },
                         \"ambr\":
                         {
                             \"downlink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             },
                             \"uplink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             }
                         },
-                        \"pcc_rule\": [],
                         \"_id\": new ObjectId(),
+                        \"name\" : \"$APN\",
+                        \"type\" : NumberInt(1),
+                        \"pcc_rule\": []
                     }],
-                    \"_id\": new ObjectId(),
+                    \"sd\": \"$SD\"
                 },
                 {
-                    \"sst\": NumberInt($SST1),
-                    \"sd\": \"$SD1\",
+                    \"_id\": new ObjectId(),
+                    \"sst\": $SSTA,
                     \"default_indicator\": true,
                     \"session\": [
                     {
-                        \"name\" : \"$APN1\",
-                        \"type\" : NumberInt(1),
                         \"qos\" :
-                        { \"index\": NumberInt($QI1),
+                        { \"index\": NumberInt($QIA),
                             \"arp\":
                             {
-                                \"priority_level\" : NumberInt($ARP1),
+                                \"priority_level\" : NumberInt($ARPA),
                                 \"pre_emption_capability\": NumberInt(1),
-                                \"pre_emption_vulnerability\": NumberInt(2)
+                                \"pre_emption_vulnerability\": NumberInt(1)
                             }
                         },
                         \"ambr\":
                         {
                             \"downlink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             },
                             \"uplink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             }
                         },
-                        \"pcc_rule\": [],
                         \"_id\": new ObjectId(),
+                        \"name\" : \"$APN\",
+                        \"type\" : NumberInt(1),
+                        \"pcc_rule\": []
                     }],
+                    \"sd\": \"$SD\"
+                },
+                {
                     \"_id\": new ObjectId(),
+                    \"sst\": $SSTA,
+                    \"default_indicator\": true,
+                    \"session\": [
+                    {
+                        \"qos\" :
+                        { \"index\": NumberInt($QIA),
+                            \"arp\":
+                            {
+                                \"priority_level\" : NumberInt($ARPA),
+                                \"pre_emption_capability\": NumberInt(1),
+                                \"pre_emption_vulnerability\": NumberInt(1)
+                            }
+                        },
+                        \"ambr\":
+                        {
+                            \"downlink\":
+                            {
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
+                            },
+                            \"uplink\":
+                            {
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
+                            }
+                        },
+                        \"_id\": new ObjectId(),
+                        \"name\" : \"$APN\",
+                        \"type\" : NumberInt(1),
+                        \"pcc_rule\": []
+                    }],
+                    \"sd\": \"$SDA\"
                 }],
-                \"security\":
-                {
-                    \"k\" : \"$KI\",
-                    \"op\" : null,
-                    \"opc\" : \"$OPC\",
-                    \"amf\" : \"8000\",
-                },
-                \"ambr\" :
-                {
-                    \"downlink\" : { \"value\": NumberInt(1000000000), \"unit\": NumberInt(0)},
-                    \"uplink\" : { \"value\": NumberInt(1000000000), \"unit\": NumberInt(0)}
-                },
-                \"access_restriction_data\": 32,
-                \"network_access_mode\": 0,
-                \"subscriber_status\": 0,
-                \"operator_determined_barring\": 0,
-                \"subscribed_rau_tau_timer\": 12,
                 \"__v\": 0
             }
             );" $DB_URI
         exit $?
     fi
 
-    echo "open5gs-dbctl: incorrect number of args, format is \"open5gs-dbctl add_ue_with_1_slice imsi key opc apn sst sd qi arp apn2 sst2 sd2 qi2 arp2\""
+    echo "open5gs-dbctl: incorrect number of args, format is \"open5gs-dbctl add_profiles_with_2_slices msisdn profilename ki opc sst1 qi1 arp
+1 sd1 apn sd1 sst2 qi2 arp2 sd2\""
     exit 1
 fi
 
