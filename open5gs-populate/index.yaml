@@ -1,0 +1,21 @@
+apiVersion: v1
+entries:
+  open5gs-populate:
+  - apiVersion: v2
+    appVersion: 0.10.10
+    created: "2025-01-07T21:37:19.135175908Z"
+    description: 'Helm chart to populate 5G profiles and 5G subscribers on Open5gs
+      Mongodb. '
+    digest: 43feb1da77b24d0a30706cefbf3affaf7d2c6c0148c22c6b91f8a2ff4153e506
+    home: https://github.com/gradiant/5g-charts
+    icon: https://open5gs.org/assets/img/open5gs-logo.png
+    maintainers:
+    - email: stephane.grannec@orange.com
+      name: sgrannec
+    name: open5gs-populate
+    sources:
+    - http://open5gs.org
+    urls:
+    - https://sgrannec.github.io/open5gs-populate/open5gs-populate-0.10.10.tgz
+    version: 0.10.10
+generated: "2025-01-07T21:37:19.134659908Z"
