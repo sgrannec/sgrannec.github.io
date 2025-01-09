@@ -3,7 +3,7 @@ entries:
   open5gs-populate:
   - apiVersion: v2
     appVersion: 0.10.10
-    created: "2025-01-09T21:39:27.319085276Z"
+    created: "2025-01-09T21:46:49.370130602Z"
     description: 'Helm chart to populate 5G profiles and 5G subscribers on Open5gs
       Mongodb. '
     digest: 9f1d3fd6c74d7b5aa2a7ffa4349231812e8a7d286b4143ab7228ec898f1b087c
@@ -18,4 +18,4 @@ entries:
     urls:
     - https://sgrannec.github.io/open5gs-populate/open5gs-populate-0.10.10.tgz
     version: 0.10.10
-generated: "2025-01-09T21:39:27.317050092Z"
+generated: "2025-01-09T21:46:49.369349567Z"
