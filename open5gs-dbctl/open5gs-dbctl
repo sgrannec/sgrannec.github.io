@@ -934,7 +934,7 @@ if [ "$1" = "add_ue_with_1_slice" ]; then
         exit $?
     fi
 
-    echo "open5gs-dbctl: incorrect number of args, format is \"open5gs-dbctl add_ue_with_1_slice imsi key opc apn sst sd qi arp\""
+    echo "open5gs-dbctl: incorrect number of args, format is \"open5gs-dbctl add_ue_with_1_slice imsi key opc apn sst sd\""
     exit 1
 fi
 
@@ -954,7 +954,6 @@ if [ "$1" = "add_ue_with_2_slices" ]; then
         QIA=${13}
         ARPA=${14}
 
-        echo $ARPA
         mongosh --eval "db.subscribers.insertOne(
             {
                 \"_id\": new ObjectId(),
@@ -1059,8 +1058,7 @@ if [ "$1" = "add_ue_with_2_slices" ]; then
         exit $?
     fi
 
-    echo "open5gs-dbctl: incorrect number of args, format is \"open5gs-dbctl add_ue_with_1_slice imsi key opc apn sst sd qi arp apn2 sst2 sd2 
-qi2 arp2\""
+    echo "open5gs-dbctl: incorrect number of args, format is \"open5gs-dbctl add_ue_with_2_slices imsi msissdn key opc apn sst sd qi arp sst2 sd2 qi2 arp2\""
     exit 1
 fi
 
@@ -1294,5 +1292,5 @@ if [ "$1" = "add_profiles_with_2_slices" ]; then
     exit 1
 fi
 
-#display_help
+display_help
 
