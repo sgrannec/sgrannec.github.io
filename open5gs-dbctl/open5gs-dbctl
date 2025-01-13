@@ -91,13 +91,13 @@ if [ "$1" = "add" ]; then
                         {
                             \"downlink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             },
                             \"uplink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             }
                         },
                         \"pcc_rule\": [],
@@ -114,8 +114,8 @@ if [ "$1" = "add" ]; then
                 },
                 \"ambr\" :
                 {
-                    \"downlink\" : { \"value\": NumberInt(1000000000), \"unit\": NumberInt(0)},
-                    \"uplink\" : { \"value\": NumberInt(1000000000), \"unit\": NumberInt(0)}
+                    \"downlink\" : { \"value\": NumberInt(1), \"unit\": NumberInt(3)},
+                    \"uplink\" : { \"value\": NumberInt(1), \"unit\": NumberInt(3)}
                 },
                 \"access_restriction_data\": 32,
                 \"network_access_mode\": 0,
@@ -165,13 +165,13 @@ if [ "$1" = "add" ]; then
                         {
                             \"downlink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             },
                             \"uplink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             }
                         },
                         \"ue\":
@@ -192,8 +192,8 @@ if [ "$1" = "add" ]; then
                 },
                 \"ambr\" :
                 {
-                    \"downlink\" : { \"value\": NumberInt(1000000000), \"unit\": NumberInt(0)},
-                    \"uplink\" : { \"value\": NumberInt(1000000000), \"unit\": NumberInt(0)}
+                    \"downlink\" : { \"value\": NumberInt(1), \"unit\": NumberInt(3)},
+                    \"uplink\" : { \"value\": NumberInt(1), \"unit\": NumberInt(3)}
                 },
                 \"access_restriction_data\": 32,
                 \"network_access_mode\": 0,
@@ -247,13 +247,13 @@ if [ "$1" = "addT1" ]; then
                         {
                             \"downlink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             },
                             \"uplink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             }
                         },
                         \"pcc_rule\": [],
@@ -274,13 +274,13 @@ if [ "$1" = "addT1" ]; then
                         {
                             \"downlink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             },
                             \"uplink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             }
                         },
                         \"pcc_rule\": [],
@@ -301,13 +301,13 @@ if [ "$1" = "addT1" ]; then
                         {
                             \"downlink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             },
                             \"uplink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             }
                         },
                         \"pcc_rule\": [],
@@ -325,8 +325,8 @@ if [ "$1" = "addT1" ]; then
                 },
                 \"ambr\" :
                 {
-                    \"downlink\" : { \"value\": NumberInt(1000000000), \"unit\": NumberInt(0)},
-                    \"uplink\" : { \"value\": NumberInt(1000000000), \"unit\": NumberInt(0)}
+                    \"downlink\" : { \"value\": NumberInt(1), \"unit\": NumberInt(3)},
+                    \"uplink\" : { \"value\": NumberInt(1), \"unit\": NumberInt(3)}
                 },
                 \"access_restriction_data\": 32,
                 \"network_access_mode\": 0,
@@ -376,13 +376,13 @@ if [ "$1" = "addT1" ]; then
                         {
                             \"downlink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             },
                             \"uplink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             }
                         },
                         \"ue\":
@@ -407,13 +407,13 @@ if [ "$1" = "addT1" ]; then
                         {
                             \"downlink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             },
                             \"uplink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             }
                         },
                         \"ue\":
@@ -438,13 +438,13 @@ if [ "$1" = "addT1" ]; then
                         {
                             \"downlink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             },
                             \"uplink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             }
                         },
                         \"ue\":
@@ -466,8 +466,8 @@ if [ "$1" = "addT1" ]; then
                 },
                 \"ambr\" :
                 {
-                    \"downlink\" : { \"value\": NumberInt(1000000000), \"unit\": NumberInt(0)},
-                    \"uplink\" : { \"value\": NumberInt(1000000000), \"unit\": NumberInt(0)}
+                    \"downlink\" : { \"value\": NumberInt(1), \"unit\": NumberInt(3)},
+                    \"uplink\" : { \"value\": NumberInt(1), \"unit\": NumberInt(3)}
                 },
                 \"access_restriction_data\": 32,
                 \"network_access_mode\": 0,
@@ -579,13 +579,13 @@ if [ "$1" = "add_ue_with_apn" ]; then
                         {
                             \"downlink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             },
                             \"uplink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             }
                         },
                         \"pcc_rule\": [],
@@ -602,8 +602,8 @@ if [ "$1" = "add_ue_with_apn" ]; then
                 },
                 \"ambr\" :
                 {
-                    \"downlink\" : { \"value\": NumberInt(1000000000), \"unit\": NumberInt(0)},
-                    \"uplink\" : { \"value\": NumberInt(1000000000), \"unit\": NumberInt(0)}
+                    \"downlink\" : { \"value\": NumberInt(1), \"unit\": NumberInt(3)},
+                    \"uplink\" : { \"value\": NumberInt(1), \"unit\": NumberInt(3)}
                 },
                 \"access_restriction_data\": 32,
                 \"network_access_mode\": 0,
@@ -661,13 +661,13 @@ if [ "$1" = "add_ue_with_slice" ]; then
                         {
                             \"downlink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             },
                             \"uplink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             }
                         },
                         \"pcc_rule\": [],
@@ -684,8 +684,8 @@ if [ "$1" = "add_ue_with_slice" ]; then
                 },
                 \"ambr\" :
                 {
-                    \"downlink\" : { \"value\": NumberInt(1000000000), \"unit\": NumberInt(0)},
-                    \"uplink\" : { \"value\": NumberInt(1000000000), \"unit\": NumberInt(0)}
+                    \"downlink\" : { \"value\": NumberInt(1), \"unit\": NumberInt(3)},
+                    \"uplink\" : { \"value\": NumberInt(1), \"unit\": NumberInt(3)}
                 },
                 \"access_restriction_data\": 32,
                 \"network_access_mode\": 0,
@@ -897,13 +897,13 @@ if [ "$1" = "add_ue_with_1_slice" ]; then
                         {
                             \"downlink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             },
                             \"uplink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             }
                         },
                         \"pcc_rule\": [],
@@ -920,8 +920,8 @@ if [ "$1" = "add_ue_with_1_slice" ]; then
                 },
                 \"ambr\" :
                 {
-                    \"downlink\" : { \"value\": NumberInt(1000000000), \"unit\": NumberInt(0)},
-                    \"uplink\" : { \"value\": NumberInt(1000000000), \"unit\": NumberInt(0)}
+                    \"downlink\" : { \"value\": NumberInt(1), \"unit\": NumberInt(3)},
+                    \"uplink\" : { \"value\": NumberInt(1), \"unit\": NumberInt(3)}
                 },
                 \"access_restriction_data\": 32,
                 \"network_access_mode\": 0,
@@ -986,13 +986,13 @@ if [ "$1" = "add_ue_with_2_slices" ]; then
                         {
                             \"downlink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             },
                             \"uplink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             }
                         },
                         \"pcc_rule\": [],
@@ -1021,13 +1021,13 @@ if [ "$1" = "add_ue_with_2_slices" ]; then
                         {
                             \"downlink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             },
                             \"uplink\":
                             {
-                                \"value\": NumberInt(1000000000),
-                                \"unit\": NumberInt(0)
+                                \"value\": NumberInt(1),
+                                \"unit\": NumberInt(3)
                             }
                         },
                         \"pcc_rule\": [],
@@ -1044,8 +1044,8 @@ if [ "$1" = "add_ue_with_2_slices" ]; then
                 },
                 \"ambr\" :
                 {
-                    \"downlink\" : { \"value\": NumberInt(1000000000), \"unit\": NumberInt(0)},
-                    \"uplink\" : { \"value\": NumberInt(1000000000), \"unit\": NumberInt(0)}
+                    \"downlink\" : { \"value\": NumberInt(1), \"unit\": NumberInt(3)},
+                    \"uplink\" : { \"value\": NumberInt(1), \"unit\": NumberInt(3)}
                 },
                 \"access_restriction_data\": 32,
                 \"network_access_mode\": 0,
