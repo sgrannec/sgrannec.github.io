@@ -84,7 +84,7 @@ if [ "$1" = "add" ]; then
                             {
                                 \"priority_level\" : NumberInt(8),
                                 \"pre_emption_capability\": NumberInt(1),
-                                \"pre_emption_vulnerability\": NumberInt(2)
+                                \"pre_emption_vulnerability\": NumberInt(1)
                             }
                         },
                         \"ambr\":
@@ -158,7 +158,7 @@ if [ "$1" = "add" ]; then
                             {
                                 \"priority_level\" : NumberInt(8),
                                 \"pre_emption_capability\": NumberInt(1),
-                                \"pre_emption_vulnerability\": NumberInt(2)
+                                \"pre_emption_vulnerability\": NumberInt(1)
                             }
                         },
                         \"ambr\":
@@ -240,7 +240,7 @@ if [ "$1" = "addT1" ]; then
                             {
                                 \"priority_level\" : NumberInt(8),
                                 \"pre_emption_capability\": NumberInt(1),
-                                \"pre_emption_vulnerability\": NumberInt(2)
+                                \"pre_emption_vulnerability\": NumberInt(1)
                             }
                         },
                         \"ambr\":
@@ -267,7 +267,7 @@ if [ "$1" = "addT1" ]; then
                             {
                                 \"priority_level\" : NumberInt(8),
                                 \"pre_emption_capability\": NumberInt(1),
-                                \"pre_emption_vulnerability\": NumberInt(2)
+                                \"pre_emption_vulnerability\": NumberInt(1)
                             }
                         },
                         \"ambr\":
@@ -294,7 +294,7 @@ if [ "$1" = "addT1" ]; then
                             {
                                 \"priority_level\" : NumberInt(8),
                                 \"pre_emption_capability\": NumberInt(1),
-                                \"pre_emption_vulnerability\": NumberInt(2)
+                                \"pre_emption_vulnerability\": NumberInt(1)
                             }
                         },
                         \"ambr\":
@@ -369,7 +369,7 @@ if [ "$1" = "addT1" ]; then
                             {
                                 \"priority_level\" : NumberInt(8),
                                 \"pre_emption_capability\": NumberInt(1),
-                                \"pre_emption_vulnerability\": NumberInt(2)
+                                \"pre_emption_vulnerability\": NumberInt(1)
                             }
                         },
                         \"ambr\":
@@ -400,7 +400,7 @@ if [ "$1" = "addT1" ]; then
                             {
                                 \"priority_level\" : NumberInt(8),
                                 \"pre_emption_capability\": NumberInt(1),
-                                \"pre_emption_vulnerability\": NumberInt(2)
+                                \"pre_emption_vulnerability\": NumberInt(1)
                             }
                         },
                         \"ambr\":
@@ -431,7 +431,7 @@ if [ "$1" = "addT1" ]; then
                             {
                                 \"priority_level\" : NumberInt(8),
                                 \"pre_emption_capability\": NumberInt(1),
-                                \"pre_emption_vulnerability\": NumberInt(2)
+                                \"pre_emption_vulnerability\": NumberInt(1)
                             }
                         },
                         \"ambr\":
@@ -572,7 +572,7 @@ if [ "$1" = "add_ue_with_apn" ]; then
                             {
                                 \"priority_level\" : NumberInt(8),
                                 \"pre_emption_capability\": NumberInt(1),
-                                \"pre_emption_vulnerability\": NumberInt(2)
+                                \"pre_emption_vulnerability\": NumberInt(1)
                             }
                         },
                         \"ambr\":
@@ -654,7 +654,7 @@ if [ "$1" = "add_ue_with_slice" ]; then
                             {
                                 \"priority_level\" : NumberInt(8),
                                 \"pre_emption_capability\": NumberInt(1),
-                                \"pre_emption_vulnerability\": NumberInt(2)
+                                \"pre_emption_vulnerability\": NumberInt(1)
                             }
                         },
                         \"ambr\":
@@ -890,7 +890,7 @@ if [ "$1" = "add_ue_with_1_slice" ]; then
                             {
                                 \"priority_level\" : NumberInt($ARP),
                                 \"pre_emption_capability\": NumberInt(1),
-                                \"pre_emption_vulnerability\": NumberInt(2)
+                                \"pre_emption_vulnerability\": NumberInt(1)
                             }
                         },
                         \"ambr\":
@@ -979,7 +979,7 @@ if [ "$1" = "add_ue_with_2_slices" ]; then
                             {
                                 \"priority_level\" : NumberInt($ARP),
                                 \"pre_emption_capability\": NumberInt(1),
-                                \"pre_emption_vulnerability\": NumberInt(2)
+                                \"pre_emption_vulnerability\": NumberInt(1)
                             }
                         },
                         \"ambr\":
@@ -1014,7 +1014,7 @@ if [ "$1" = "add_ue_with_2_slices" ]; then
                             {
                                 \"priority_level\" : NumberInt($ARPA),
                                 \"pre_emption_capability\": NumberInt(1),
-                                \"pre_emption_vulnerability\": NumberInt(2)
+                                \"pre_emption_vulnerability\": NumberInt(1)
                             }
                         },
                         \"ambr\":
